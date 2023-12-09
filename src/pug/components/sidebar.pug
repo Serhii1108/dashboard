@@ -1,0 +1,11 @@
+- var navItems = [{content: 'dashboard', status: ""}, {content: 'product', status: ""}, {content: 'customers', status: "active"}, {content: 'income', status: ""}, {content: 'promote', status: ""}, {content: 'help', status: ""}];
+
+section.sidebar
+  include ../includes/header.pug
+
+  nav.nav-wrap
+    ul.nav
+      each item in navItems
+        include ../includes/nav-item.pug
+
+  include ../includes/footer.pug

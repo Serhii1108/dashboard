@@ -1,0 +1,41 @@
+@use '../import/vars.scss' as *;
+
+.nav__item {
+  @include sidebar-font;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 46px;
+  padding: 11px;
+  text-transform: capitalize;
+  color: #9197b3;
+  cursor: pointer;
+
+  &-title {
+    flex: 1;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    filter: invert(69%) sepia(11%) saturate(629%) hue-rotate(192deg) brightness(85%) contrast(91%);
+
+    &-arrow {
+      width: 16px;
+      height: 16px;
+      margin-right: 0;
+    }
+  }
+
+  &.active {
+    color: #fff;
+    background-color: $sidebar-accent-color;
+
+    .icon {
+      filter: none;
+    }
+  }
+}

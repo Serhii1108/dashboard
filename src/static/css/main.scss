@@ -1,2 +1,10 @@
-@import "import/reset";
-@import "import/fonts";
+@import 'import/reset';
+@import 'import/fonts';
+@import 'components/header';
+@import 'components/nav-item';
+@import 'components/sidebar';
+@import 'components/footer';
+
+body {
+  background-color: #fafbff;
+}

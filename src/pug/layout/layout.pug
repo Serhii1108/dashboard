@@ -2,15 +2,16 @@ include ../includes/mixins.pug
 block vars
 
 doctype html
-html(lang="en-EN")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
-        title #{title}
-        include ../includes/links.pug
-    body
-        block header
+html(lang='en-EN')
+  head
+    meta(charset='UTF-8')
+    meta(
+      name='viewport',
+      content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1'
+    )
+    title #{ title }
+    include ../includes/links.pug
+  body
+    block sidebar
 
-        block content
-
-        block footer
+    script(src='js/main.js')

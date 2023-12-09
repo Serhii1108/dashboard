@@ -1,0 +1,34 @@
+.user-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: auto;
+
+  &__avatar {
+    width: 42px;
+    height: 42px;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 12px;
+
+    .name {
+      font-size: 14px;
+    }
+    .job {
+      color: #757575;
+      font-size: 12px;
+    }
+  }
+}

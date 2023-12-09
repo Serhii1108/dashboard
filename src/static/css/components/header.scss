@@ -1,0 +1,27 @@
+@use '../import/vars.scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+  cursor: pointer;
+
+  .icon-settings {
+    width: 37px;
+    height: 37px;
+  }
+
+  &__title {
+    font-family: $main-font-family;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  &__subtitle {
+    color: #838383;
+    font-size: 10px;
+    margin-left: 4px;
+    margin-top: auto;
+  }
+}

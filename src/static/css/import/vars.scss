@@ -1,0 +1,27 @@
+$main-font-family: 'Poppins', sans-serif;
+$main-font-weight: 500;
+
+$primary-font-color: #292d32;
+$primary-accent-color-positive: #16c098;
+$primary-accent-color-negative: #df0404;
+@mixin primary-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $main-font-weight;
+  color: $primary-font-color;
+}
+
+$secondary-font-color: #b5b7c0;
+@mixin secondary-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $main-font-weight;
+  color: $secondary-font-color;
+}
+
+$sidebar-width: 300px;
+$sidebar-font-color: #9197b3;
+$sidebar-accent-color: #5932ea;
+@mixin sidebar-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $main-font-weight;
+  color: $sidebar-font-color;
+}

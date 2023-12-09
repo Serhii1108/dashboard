@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 blockquote,
@@ -18,43 +18,43 @@ li,
 ol,
 p,
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: "Poppins";
-    font-weight: 400;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    overflow-x: hidden;
-    height: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 ol,
 ul {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    font-family: inherit;
-    text-decoration: none;
-    color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-    cursor: pointer;
-    border: none;
+  cursor: pointer;
+  border: none;
 }
 
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
