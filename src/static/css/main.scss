@@ -1,10 +1,13 @@
+@use 'import/vars.scss' as *;
 @import 'import/reset';
 @import 'import/fonts';
 @import 'components/header';
 @import 'components/nav-item';
 @import 'components/sidebar';
 @import 'components/footer';
+@import 'components/main-component';
 
 body {
   background-color: #fafbff;
+  display: flex;
 }

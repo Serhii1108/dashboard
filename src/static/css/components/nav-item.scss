@@ -1,8 +1,6 @@
-@use '../import/vars.scss' as *;
-
 .nav__item {
   @include sidebar-font;
-  font-size: 14px;
+  font-size: $primary-font-size;
 
   display: flex;
   align-items: center;
@@ -10,7 +8,6 @@
   height: 46px;
   padding: 11px;
   text-transform: capitalize;
-  color: #9197b3;
   cursor: pointer;
 
   &-title {
@@ -20,7 +17,7 @@
   .icon {
     width: 24px;
     height: 24px;
-    margin-right: 14px;
+    margin-right: $primary-font-size;
     filter: invert(69%) sepia(11%) saturate(629%) hue-rotate(192deg) brightness(85%) contrast(91%);
 
     &-arrow {

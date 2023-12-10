@@ -1,0 +1,41 @@
+- var name = 'Evano';
+- var tableContent = [{name: "Jane Cooper", company:"Microsoft", phone:"(225) 555-0118", email:"jane@microsoft.com", country:"United States",status: "active"},{name: "Floyd Miles", company:"Yahoo", phone:"(205) 555-0100", email:"floyd@yahoo.com", country:"Kiribati",status: "inactive"},{name: "Ronald Richards", company:"Adobe", phone:"(252) 555-0126", email:"ronald@adobe.com", country:"Israel",status: "inactive"},{name: "Marvin McKinney", company:"Tesla", phone:"(205) 555-0100", email:"marvin@tesla.com", country:"Iran",status: "active"},{name: "Jerome Bell", company:"Tesla", phone:"(225) 555-0118", email:"jerome@google.com", country:"Réunion",status: "active"},{name: "Kathryn Murphy", company:"Microsoft", phone:"(252) 555-0126", email:"kathryn@microsoft.com", country:"Curaçao",status: "active"},{name: "Jacob Jones", company:"Yahoo", phone:"(225) 555-0118", email:"jacob@yahoo.com", country:"Brazil",status: "active"},{name: "Kristin Watson", company:"Facebook", phone:"(205) 555-0100", email:"kristin@facebook.com", country:"Åland Islands",status: "inactive"},];
+- var contentLength = '256K';
+
+main.main.main-container
+  h2.main__greeting
+    | Hello #{ name } &#128075,
+
+  .main__content
+    .header-content
+      .header-content__wrap
+        h3.header-content__title All Customers
+        p.header-content__subtitle Active Members
+      .header-content__search
+        +icon("search")
+        input(type='text', name='search', placeholder='Search')
+
+    .customers
+      table.table
+        thead.table__head
+          tr
+            th(scope='col') Customer Name
+            th(scope='col') Company
+            th(scope='col') Phone Number
+            th(scope='col') Email
+            th(scope='col') Country
+            th(scope='col') Status
+        tbody.table__body
+          each item in tableContent 
+            include ../includes/table-item.pug
+    .footer-content
+      .footer-content__info Showing data 1 to 8 of #{ contentLength } entries
+      .pagination
+        button.pagination__btn.pagination__btn_previous(type='button') <
+        button.pagination__btn.pagination__btn_btn1.pagination__btn-active(type='button') 1
+        button.pagination__btn.pagination__btn_btn2(type='button') 2
+        button.pagination__btn.pagination__btn_btn3(type='button') 3
+        button.pagination__btn.pagination__btn_btn4(type='button') 4
+        .pagination__dots ...
+        button.pagination__btn.btn40(type='button') 40
+        button.pagination__btn.pagination__btn_next(type='button') >
