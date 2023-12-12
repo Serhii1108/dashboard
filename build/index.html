@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="sidebar">
+      <header class="header">
+        <svg class="icon icon-settings">
+          <use xlink:href="/img/svg/sprite.svg#settings"></use>
+        </svg>
+        <h1 class="header__title">Dashboard<span class="header__subtitle">v.01</span></h1>
+      </header>
+      <nav class="nav-wrap">
+        <div class="menu-btn-wrap">
+          <button class="menu-btn menu-btn__open menu-btn-active" type="button" onClick="toggleMenu()">
+            <svg class="icon icon-menu">
+              <use xlink:href="/img/svg/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <button class="menu-btn menu-btn__close" type="button" onClick="toggleMenu()">
+            <svg class="icon icon-close">
+              <use xlink:href="/img/svg/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav">
+          <li class="nav__item">
+            <svg class="icon icon-dashboard">
+              <use xlink:href="/img/svg/sprite.svg#dashboard"></use>
+            </svg><span class="nav__item-title">dashboard</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+          <li class="nav__item">
+            <svg class="icon icon-product">
+              <use xlink:href="/img/svg/sprite.svg#product"></use>
+            </svg><span class="nav__item-title">product</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+          <li class="nav__item active">
+            <svg class="icon icon-customers">
+              <use xlink:href="/img/svg/sprite.svg#customers"></use>
+            </svg><span class="nav__item-title">customers</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+          <li class="nav__item">
+            <svg class="icon icon-income">
+              <use xlink:href="/img/svg/sprite.svg#income"></use>
+            </svg><span class="nav__item-title">income</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+          <li class="nav__item">
+            <svg class="icon icon-promote">
+              <use xlink:href="/img/svg/sprite.svg#promote"></use>
+            </svg><span class="nav__item-title">promote</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+          <li class="nav__item">
+            <svg class="icon icon-help">
+              <use xlink:href="/img/svg/sprite.svg#help"></use>
+            </svg><span class="nav__item-title">help</span>
+            <svg class="icon icon-arrow">
+              <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <div class="user-info__avatar"><img src="/img/png/avatar.png" alt="" srcset=""></div>
+        <div class="user-info__description">
+          <p class="name">Evano</p>
+          <p class="job">Project Manager</p>
+        </div>
+      </div>
+    </section>
+    <main class="main main-container">
+      <h2 class="main__greeting">Hello Evano &#128075,</h2>
+      <div class="main__content">
+        <div class="header-content">
+          <div class="header-content__wrap">
+            <h3 class="header-content__title">All Customers</h3>
+            <p class="header-content__subtitle">Active Members</p>
+          </div>
+          <div class="header-content__search">
+            <svg class="icon icon-search">
+              <use xlink:href="/img/svg/sprite.svg#search"></use>
+            </svg>
+            <input type="text" name="search" placeholder="Search">
+          </div>
+        </div>
+        <div class="customers">
+          <table class="table">
+            <thead class="table__head">
+              <tr>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Company</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Email</th>
+                <th scope="col">Country</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="row">
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <div class="row__status row__status-active">
+                    <p>active</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td>
+                  <div class="row__status row__status-inactive">
+                    <p>inactive</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(252) 555-0126</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td>
+                  <div class="row__status row__status-inactive">
+                    <p>inactive</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(205) 555-0100</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td>
+                  <div class="row__status row__status-active">
+                    <p>active</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Jerome Bell</td>
+                <td>Tesla</td>
+                <td>(225) 555-0118</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td>
+                  <div class="row__status row__status-active">
+                    <p>active</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(252) 555-0126</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td>
+                  <div class="row__status row__status-active">
+                    <p>active</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(225) 555-0118</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td>
+                  <div class="row__status row__status-active">
+                    <p>active</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row">
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(205) 555-0100</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td>
+                  <div class="row__status row__status-inactive">
+                    <p>inactive</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content__info">Showing data 1 to 8 of 256K entries</div>
+          <div class="pagination">
+            <button class="pagination__btn pagination__btn_previous" type="button"><</button>
+            <button class="pagination__btn pagination__btn_btn1 pagination__btn-active" type="button">1</button>
+            <button class="pagination__btn pagination__btn_btn2" type="button">2</button>
+            <button class="pagination__btn pagination__btn_btn3" type="button">3</button>
+            <button class="pagination__btn pagination__btn_btn4" type="button">4</button>
+            <div class="pagination__dots">...</div>
+            <button class="pagination__btn btn40" type="button">40</button>
+            <button class="pagination__btn pagination__btn_next" type="button">></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
