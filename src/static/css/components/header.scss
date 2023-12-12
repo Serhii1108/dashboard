@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+  cursor: pointer;
+
+  .icon-settings {
+    width: 37px;
+    height: 37px;
+  }
+
+  &__title {
+    font-family: $main-font-family;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  &__subtitle {
+    color: #838383;
+    font-size: 10px;
+    margin-left: 4px;
+    margin-top: auto;
+  }
+}
+
+@media only screen and (min-width: 19em) {
+  .header {
+    margin-bottom: 0;
+    .icon-settings {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-left: 3px;
+    }
+
+    &__subtitle {
+      font-size: 8px;
+      margin-left: 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .header {
+    margin-bottom: 30px;
+
+    .icon-settings {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__title {
+      font-size: 23px;
+      margin-left: 5px;
+    }
+
+    &__subtitle {
+      font-size: 10px;
+      margin-left: 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .header {
+    margin-bottom: 40px;
+
+    .icon-settings {
+      width: 37px;
+      height: 37px;
+    }
+
+    &__title {
+      font-size: 26px;
+      margin-left: 8px;
+    }
+
+    &__subtitle {
+      margin-left: 4px;
+    }
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .header {
+    margin-bottom: 55px;
+  }
+}

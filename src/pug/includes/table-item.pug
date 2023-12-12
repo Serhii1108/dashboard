@@ -1,0 +1,9 @@
+tr.row
+  td= item.name
+  td= item.company
+  td= item.phone
+  td= item.email
+  td= item.country
+  td
+    .row__status(class='row__status-' + item.status)
+      p= item.status

@@ -1,0 +1,61 @@
+.user-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: $primary-font-size;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: auto;
+
+  &__avatar {
+    width: 42px;
+    height: 42px;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    font-family: $main-font-family;
+    margin-left: 12px;
+
+    .name {
+      font-size: $primary-font-size;
+    }
+    .job {
+      color: #757575;
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (min-width: 19em) {
+  .user-info {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .user-info {
+    justify-content: none;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 50em) and (min-height: 380px) {
+  .user-info {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 50em) and (min-height: 600px) {
+  .user-info {
+    margin-top: 0;
+  }
+}
