@@ -17,7 +17,7 @@
   .icon {
     width: 24px;
     height: 24px;
-    margin-right: $primary-font-size;
+    margin-right: 14px;
     filter: invert(69%) sepia(11%) saturate(629%) hue-rotate(192deg) brightness(85%) contrast(91%);
 
     &-arrow {
@@ -33,6 +33,38 @@
 
     .icon {
       filter: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 19em) {
+  .nav__item {
+    .icon {
+      width: 22px;
+      height: 22px;
+      margin-right: 12px;
+
+      &-arrow {
+        width: 14px;
+        height: 14px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .nav__item {
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 14px;
+
+      &-arrow {
+        width: 16px;
+        height: 16px;
+        margin-right: 0;
+      }
     }
   }
 }

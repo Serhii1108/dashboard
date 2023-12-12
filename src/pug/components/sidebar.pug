@@ -4,6 +4,12 @@ section.sidebar
   include ../includes/header.pug
 
   nav.nav-wrap
+    .menu-btn-wrap
+      button.menu-btn.menu-btn__open.menu-btn-active(type='button', onClick='toggleMenu()')
+        +icon('menu')
+      button.menu-btn.menu-btn__close(type='button', onClick='toggleMenu()')
+        +icon('close')
+
     ul.nav
       each item in navItems
         include ../includes/nav-item.pug

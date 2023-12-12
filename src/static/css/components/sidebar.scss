@@ -3,8 +3,9 @@
 .sidebar {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 
-  width: $sidebar-width;
+  width: 300px;
   height: 100vh;
   background-color: #fff;
   padding: 37px 28px;
@@ -15,5 +16,101 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 19em) {
+  .sidebar {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+
+    .nav-wrap {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+
+      .menu-btn-wrap {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+
+        .menu-btn {
+          display: none;
+          width: inherit;
+          height: inherit;
+          padding: 0;
+          background-color: transparent;
+
+          &-active {
+            display: block;
+          }
+
+          .icon {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+    }
+    .nav {
+      display: none;
+
+      &-active {
+        display: flex;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: auto;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0 0 15px 15px;
+        filter: drop-shadow(-15px 30px 20px rgba(100, 100, 100, 0.3));
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .sidebar {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    min-height: 100vh;
+    padding: 28px 20px;
+    flex-wrap: nowrap;
+
+    .nav-wrap {
+      align-items: start;
+    }
+
+    .menu-btn-wrap {
+      display: none;
+    }
+
+    .nav {
+      row-gap: 15px;
+      display: flex;
+
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .sidebar {
+    width: 300px;
+    padding: 37px 28px;
+
+    .nav {
+      row-gap: 20px;
+    }
   }
 }

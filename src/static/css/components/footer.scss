@@ -20,7 +20,7 @@
   }
 
   &__description {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font-family;
     margin-left: 12px;
 
     .name {
@@ -30,5 +30,32 @@
       color: #757575;
       font-size: 12px;
     }
+  }
+}
+
+@media only screen and (min-width: 19em) {
+  .user-info {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .user-info {
+    justify-content: none;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 50em) and (min-height: 380px) {
+  .user-info {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 50em) and (min-height: 600px) {
+  .user-info {
+    margin-top: 0;
   }
 }

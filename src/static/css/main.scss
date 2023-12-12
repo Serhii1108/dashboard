@@ -11,3 +11,15 @@ body {
   background-color: #fafbff;
   display: flex;
 }
+
+@media only screen and (min-width: 19em) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  body {
+    flex-direction: row;
+  }
+}
