@@ -5,6 +5,7 @@ module.exports = function () {
         baseDir: './build',
         index: 'index.html',
       },
+      cors: true,
     });
   });
 };
